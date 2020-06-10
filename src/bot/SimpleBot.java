@@ -6,7 +6,7 @@ public class SimpleBot {
     final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        greet("Aid", "2018"); // change it as you need
+        greet("FridaY", "2020"); // change it as you need
         remindName();
         guessAge();
         count();
@@ -45,17 +45,20 @@ public class SimpleBot {
 
     static void test() {
         System.out.println("Let's test your programming knowledge.");
-        String s = String.format("%s/n%s/n%s/n%s/n%s/n",
+        String s = String.format("%s\n%s\n%s\n%s\n%s",
                 "Why do we use methods?" ,
                 "1. To repeat a statement multiple times." ,
                 "2. To decompose a program into several small subroutines.",
                 "3. To determine the execution time of a program.",
                 "4. To interrupt the execution of a program.");
         System.out.println(s);
-        int choice = scanner.nextInt();
-        if (choice == 2) {
-        } else {
-            System.out.println("Please, try again.");
+        while (true) {
+            int choice = scanner.nextInt();
+            if (choice == 2) {
+                break;
+            } else {
+                System.out.println("Please, try again.");
+            }
         }
     }
 
