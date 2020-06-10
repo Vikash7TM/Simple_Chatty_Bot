@@ -60,6 +60,6 @@ public class SimpleBot {
     }
 
     static void end() {
-        System.out.println("Congratulations, have a nice day!");
+        System.out.println("Congratulations user, have a nice day!");
     }
 }
